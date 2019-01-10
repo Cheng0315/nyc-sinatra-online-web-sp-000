@@ -9,7 +9,7 @@
   <br>
   <%Title.all.each do |t|%>
   <label><h2><%=t.name%></h2></label>
-  <input type="checkbox" name="title_name" id="title_name">
+  <input type="checkbox" name="title[]" value="<%=t.id%>" id="<%=t.id%>"></input>
   <br>
   <%end%>
 
@@ -22,15 +22,16 @@
   <br>
   <%Landmark.all.each do |l|%>
   <label><h2><%=l.name%></h2></label>
-  <input type="checkbox" name="landmark_name" id="landmark_name">
+  <input type="checkbox" name="landmark[]" id="l.id" value="l.id">
   <br>
   <%end%>
-  
-  <label for="landmark_name">Name: </label>
-  <input type="text" name="landmark[name]" id="landmark_name">
 
-  <label for="landmark_year_completed">Year Completed: </label>
-  <input type="text" name="landmark[year_completed]" id="landmark_year_completed">
+
+  <h1>Create New Landmark</h1>
+  <br>
+  <input type="text" name="landmark_name" id="landmark_name">
+  <br>
+
 
   <input type="submit" id="Submit" value="Create New Landmark">
 </form>
