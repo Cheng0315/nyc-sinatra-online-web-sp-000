@@ -19,7 +19,7 @@
 
   <h1>Landmarks</h1>
   <br>
-  <%@landmark.each do |l|%>
+  <%@landmarks.each do |l|%>
   <input type="checkbox" name="figure[landmark_ids][]" id="<%=l.id%>" value="<%=l.id%>"><label><%=l.name%></label></input>
   <br>
   <%end%>
