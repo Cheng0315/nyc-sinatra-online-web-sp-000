@@ -8,19 +8,19 @@
   <h1>Titles</h1>
   <br>
   <%Title.all.each do |t|%>
-  <input type="checkbox" name="title[]" value="<%=t.id%>" id="<%=t.id%>"><label><%=t.name%></label></input>
+  <input type="checkbox" name="figure[title][]" value="<%=t.id%>" id="<%=t.id%>"><label><%=t.name%></label></input>
   <br>
   <%end%>
 
   <h1>Create New Title</h1>
   <br>
-  <input type="text" name="title" id="title_name">
+  <input type="text" name="figure_title" id="title_name">
   <br>
 
   <h1>Landmarks</h1>
   <br>
   <%Landmark.all.each do |l|%>
-  <input type="checkbox" name="landmark[]" id="<%=l.id%>" value="<%=l.id%>"><label><%=l.name%></label></input>
+  <input type="checkbox" name="figure[landmark]" id="<%=l.id%>" value="<%=l.id%>"><label><%=l.name%></label></input>
   <br>
   <%end%>
 
