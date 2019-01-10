@@ -1,15 +1,20 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Title</th>
+    <th>Landmark(s)</th>
     <th>Year Completed</th>
   </tr>
   <tr>
     <td><%= @figure.name %></td>
+    <%@figure.titles.each do |t|%>
+    <td><%= t.name %></td>
+    <%end%>
     <%@figure.landmarks.each do |l|%>
     <td><%= l.name %></td>
     <%end%>
-    <%@figure.titles.each do |t|%>
-    <td><%= t.name %></td>
+    <%@figure.landmarks.each do |l|%>
+    <td><%= l.year_completed %></td>
     <%end%>
   </tr>
 <table>
