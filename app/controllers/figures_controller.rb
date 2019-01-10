@@ -10,8 +10,7 @@ class FiguresController < ApplicationController
   end
 
   post "/figures" do
-    @figure = Figure.new
-    @figure.name = params[:figure][:name]
+    "hello"
   end
 
   get "/figures/:id" do
