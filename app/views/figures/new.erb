@@ -8,7 +8,8 @@
   <h1>Titles</h1>
   <br>
   <%Title.all.each do |t|%>
-  <input type="checkbox" name="title[]" value="<%=t.id%>" id="<%=t.id%>"><%=t.name%></input>
+  <%=t.name%><input type="checkbox" name="title[]" value="<%=t.id%>" id="<%=t.id%>"></input>
+  <br>
   <%end%>
 
   <h1>Create New Title</h1>
@@ -19,7 +20,8 @@
   <h1>Landmarks</h1>
   <br>
   <%Landmark.all.each do |l|%>
-  <input type="checkbox" name="landmark[]" id="<%=l.id%>" value="<%=l.id%>"><%=l.name%></input>
+  <%=l.name%><input type="checkbox" name="landmark[]" id="<%=l.id%>" value="<%=l.id%>"></input>
+  <br>
   <%end%>
 
 
