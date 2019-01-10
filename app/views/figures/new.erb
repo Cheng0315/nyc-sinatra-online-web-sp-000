@@ -2,9 +2,30 @@
 
 <form action="/figures" method="post">
 
-  <label for="landmark_name">Name: </label>
-  <input type="text" name="landmark[name]" id="landmark_name">
+  <label for="Name">Name: </label>
+  <input type="text" name="Name" id="Name">
 
+  <h1>Titles</h1>
+  <br>
+  <%Title.all.each do |t|%>
+  <label><h2><%=t.name%></h2></label>
+  <input type="checkbox" name="title_name" id="title_name">
+  <br>
+  <%end%>
+
+  <h1>Create New Title</h1>
+  <br>
+  <input type="text" name="title_name" id="title_name">
+  <br>
+
+  <h1>Landmarks</h1>
+  <br>
+  <%Landmark.all.each do |l|%>
+  <label><h2><%=l.name%></h2></label>
+  <input type="checkbox" name="landmark_name" id="landmark_name">
+  <br>
+  <%end%>
+  
   <label for="landmark_name">Name: </label>
   <input type="text" name="landmark[name]" id="landmark_name">
 
