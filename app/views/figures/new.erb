@@ -8,8 +8,7 @@
   <h1>Titles</h1>
   <br>
   <%Title.all.each do |t|%>
-  <label><h2><%=t.name%></h2></label>
-  <input type="checkbox" name="title[]" value="<%=t.id%>" id="<%=t.id%>"></input>
+  <label><h2><%=t.name%></h2></label><input type="checkbox" name="title[]" value="<%=t.id%>" id="<%=t.id%>"></input>
   <br>
   <%end%>
 
