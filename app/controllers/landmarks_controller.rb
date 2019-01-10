@@ -27,6 +27,6 @@ class LandmarksController < ApplicationController
   patch "/landmarks/:id" do
     @landmark = Landmark.create(params[:landmark])
 
-    redirect "/landmarks/#{@landmark.id - 1}"
+    redirect "/landmarks/#{@landmark.id}"
   end
 end
