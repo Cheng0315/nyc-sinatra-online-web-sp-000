@@ -8,7 +8,7 @@
   <h1>Titles</h1>
   <br>
   <%Title.all.each do |t|%>
-  <input type="checkbox" name="figure[title_ids][]" value="<%=t.id%>" id="<%=title_#{Title.first.id}%>"><label><%=t.name%></label></input>
+  <input type="checkbox" name="figure[title_ids][]" value="<%=t.id%>" id="<%=t.id%>"><label><%=t.name%></label></input>
   <br>
   <%end%>
 
