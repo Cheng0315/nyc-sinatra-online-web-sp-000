@@ -12,8 +12,6 @@ class FiguresController < ApplicationController
   post "/figures" do
     @figure = Figure.new
     @figure.name = params[:figure][:name]
-    @figure.titles = params[:title]
-    @figure.landmarks = params[:landmark]
     @figure.save
     binding.pry
 
