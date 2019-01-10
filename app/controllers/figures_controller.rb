@@ -15,6 +15,8 @@ class FiguresController < ApplicationController
     @figure.titles = params[:figure][:title_ids]
     @figure.landmarks = params[:figure][:landmark_ids]
     @figure.save
+
+    redirect "/figures/#{@figure.id}"
   end
 
   get "/figures/:id" do
