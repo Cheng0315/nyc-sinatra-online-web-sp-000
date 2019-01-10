@@ -20,7 +20,7 @@
   <h1>Landmarks</h1>
   <br>
   <%Landmark.all.each do |l|%>
-  <input type="checkbox" name="landmark[name]" id="<%=l.id%>" value="<%=l.id%>"><label><%=l.name%></label></input>
+  <input type="checkbox" name="figure[landmark_ids][]" id="<%=l.id%>" value="<%=l.id%>"><label><%=l.name%></label></input>
   <br>
   <%end%>
 
@@ -28,9 +28,9 @@
   <h1>Create New Landmark</h1>
   <br>
   <label for="landmark_name">Name: </label>
-  <input type="text" name="landmark_name" id="landmark_name">
-  <label for="landmark_year">Year: </label>
-  <input type="text" name="landmark_year" id="landmark_yeaer">
+  <input type="text" name="landmark[name]" id="landmark_name">
+  <label for="year_completed">Year: </label>
+  <input type="text" name="landmark[year_completed]" id="year_completed">
   <br>
   <br>
 
