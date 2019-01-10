@@ -15,6 +15,7 @@ class FiguresController < ApplicationController
     @figure.titles = params[:title]
     @figure.landmarks = params[:landmark]
     @figure.save
+    binding.pry
 
     redirect "/figures/#{@figure.id}"
   end
