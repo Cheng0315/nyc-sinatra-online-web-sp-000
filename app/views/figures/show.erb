@@ -15,9 +15,11 @@ table, th, td {
       <%= @figure.name %>
     </td>
     <td>
+      <ul>
       <%@figure.titles.each do |t|%>
-      <%= t.name %>
+      <li><%= t.name %></li>
       <%end%>
+      </ul>
     </td>
     <td>
       <ul>
