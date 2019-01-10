@@ -5,5 +5,8 @@
   </tr>
   <tr>
     <td><%= @figure.name %></td>
+    <%@figure.landmarks.each do |l|%>
+    <td><%= l.name %></td>
+    <%end%>
   </tr>
 <table>
