@@ -10,8 +10,6 @@ class FiguresController < ApplicationController
   end
 
   post "/figures" do
-    @figure = Figure.new
-    @figure.name = params[:figure][:name]
     binding.pry
   end
 
