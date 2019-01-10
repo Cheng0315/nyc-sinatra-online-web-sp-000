@@ -15,6 +15,7 @@ class FiguresController < ApplicationController
     @figure.titles = params[:figure][:title_ids]
     @figure.landmarks = params[:figure][:landmark_ids]
     @figure.save
+    binding.pry
   end
 
   get "/figures/:id" do
