@@ -7,7 +7,7 @@
 
   <h1>Titles</h1>
   <br>
-  <%Landmark.all.each do |t|%>
+  <%Title.all.each do |t|%>
   <input type="checkbox" name="figure[title_ids][]" value="<%=t.id%>" id="title_<%=t.id%>"><label><%=t.name%></label></input>
   <br>
   <%end%>
