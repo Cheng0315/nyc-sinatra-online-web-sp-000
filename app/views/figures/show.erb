@@ -7,9 +7,9 @@
   </tr>
   <tr>
     <td><%= @figure.name %></td>
-    <%@figure.titles.each do |t|%>
-    <td><%= t.name %></td>
-    <%end%>
+    <td><%@figure.titles.each do |t|%>
+    <%= t.name %>
+    <%end%></td>
     <%@figure.landmarks.each do |l|%>
     <td><%= l.name %></td>
     <%end%>
