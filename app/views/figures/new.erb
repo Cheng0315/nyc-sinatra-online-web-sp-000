@@ -22,7 +22,7 @@
   <br>
   <%Landmark.all.each do |l|%>
   <label><h2><%=l.name%></h2></label>
-  <input type="checkbox" name="landmark[]" id="l.id" value="l.id">
+  <input type="checkbox" name="landmark[]" id="<%=l.id%>" value="<%=l.id%>">
   <br>
   <%end%>
 
