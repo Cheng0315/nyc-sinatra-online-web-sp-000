@@ -10,12 +10,12 @@
     <td><%@figure.titles.each do |t|%>
     <%= t.name %>
     <%end%></td>
-    <%@figure.landmarks.each do |l|%>
-    <td><%= l.name %></td>
-    <%end%>
-    <%@figure.landmarks.each do |l|%>
-    <td><%= l.year_completed %></td>
-    <%end%>
+    <td><%@figure.landmarks.each do |l|%>
+    <%= l.name %>
+    <%end%></td>
+    <td><%@figure.landmarks.each do |l|%>
+    <%= l.year_completed %>
+    <%end%></td>
   </tr>
 <table>
 
