@@ -12,6 +12,9 @@ class FiguresController < ApplicationController
   post "/figures" do
     @figure = Figure.new
     @figure.name = params[:figure][:name]
+    @figure.titles = params[:figure][:title_ids]
+    @figure.landmarks = params[:figure][:landmark_ids]
+    @figure.save
   end
 
   get "/figures/:id" do
